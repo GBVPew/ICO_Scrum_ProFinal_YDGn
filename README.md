@@ -12,4 +12,4 @@ Ramirez Castillo Ángel Oswaldo - Scrum Team, Correo: weskeryoka@gmail.com
 
 Marínez Espíritu José Luis - Scrum Team, Correo: joseloespritu_8v@hotmail.com
 
-García Luis - Scrum Team, Correo: 
+García Cervantes Luis Ángel - Scrum Team, Correo: Luis_garciacervantes@yahoo.com.mx
