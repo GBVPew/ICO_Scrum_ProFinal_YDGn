@@ -1,6 +1,8 @@
 package VentanasInicio;
 
+import java.awt.BorderLayout;
 import javax.swing.ImageIcon;
+import javax.swing.JPanel;
 
 /**
  *
@@ -95,7 +97,7 @@ public class Principal extends javax.swing.JFrame {
                     .addGroup(FondoLayout.createSequentialGroup()
                         .addGap(26, 26, 26)
                         .addComponent(Emenu)
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Teoria)
                         .addGap(18, 18, 18)
                         .addComponent(Scrum)
@@ -123,16 +125,27 @@ public class Principal extends javax.swing.JFrame {
 
     private void TeoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TeoriaActionPerformed
         Teoria teoria = new Teoria();
-        teoria.setVisible(true);
+        this.Fondo.removeAll();
+        this.Fondo.add(teoria.getFondo(), BorderLayout.CENTER);
+        this.Fondo.revalidate();
+        this.setPreferredSize(teoria.getPreferredSize());
+        this.Fondo.repaint();
+        
+        /*teoria.setVisible(true);*/
         teoria.setTitle("Teoría básica Ingeniería de Software");
     }//GEN-LAST:event_TeoriaActionPerformed
+
+    public void setFondo(JPanel Fondo) {
+        this.Fondo = Fondo;
+    }
 
 
     public static void main(String args[]) {
         Principal principal = new Principal();
         principal.setVisible(true);
         principal.setTitle("YDGn");
-        principal.setResizable(false);
+       // principal.setResizable(false);
+       
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

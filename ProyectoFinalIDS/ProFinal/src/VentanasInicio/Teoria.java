@@ -1,6 +1,7 @@
 package VentanasInicio;
 
 import javax.swing.ImageIcon;
+import javax.swing.JPanel;
 
 /**
  *
@@ -23,6 +24,8 @@ public class Teoria extends javax.swing.JFrame {
         titulo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
+        Fondo.setPreferredSize(new java.awt.Dimension(567, 392));
 
         javax.swing.GroupLayout image1Layout = new javax.swing.GroupLayout(image1);
         image1.setLayout(image1Layout);
@@ -61,7 +64,7 @@ public class Teoria extends javax.swing.JFrame {
                     .addGroup(FondoLayout.createSequentialGroup()
                         .addGap(106, 106, 106)
                         .addComponent(titulo)))
-                .addContainerGap(110, Short.MAX_VALUE))
+                .addContainerGap(264, Short.MAX_VALUE))
         );
         FondoLayout.setVerticalGroup(
             FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -70,7 +73,7 @@ public class Teoria extends javax.swing.JFrame {
                 .addComponent(titulo)
                 .addGap(18, 18, 18)
                 .addComponent(image1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 257, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 157, Short.MAX_VALUE)
                 .addComponent(cerrar)
                 .addGap(22, 22, 22))
         );
@@ -83,7 +86,9 @@ public class Teoria extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Fondo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(Fondo, javax.swing.GroupLayout.PREFERRED_SIZE, 384, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -98,6 +103,14 @@ public class Teoria extends javax.swing.JFrame {
        teoria.setVisible(true);
        teoria.setTitle("Teoría básica Ingeniería de Software");
        teoria.setResizable(false);
+    }
+
+    public JPanel getFondo() {
+        return Fondo;
+    }
+
+    public void setFondo(JPanel Fondo) {
+        this.Fondo = Fondo;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
