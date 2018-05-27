@@ -130,10 +130,12 @@ public class Principal extends javax.swing.JFrame {
         this.Fondo.revalidate();
         this.setPreferredSize(teoria.getPreferredSize());
         this.Fondo.repaint();
-        
-        /*teoria.setVisible(true);*/
-        teoria.setTitle("Teoría básica Ingeniería de Software");
+//        this.setTitle("Teoría básica Ingeniería de Software");
     }//GEN-LAST:event_TeoriaActionPerformed
+
+    public JPanel getFondo() {
+        return Fondo;
+    }
 
     public void setFondo(JPanel Fondo) {
         this.Fondo = Fondo;

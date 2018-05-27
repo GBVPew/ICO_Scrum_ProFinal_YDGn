@@ -1,5 +1,6 @@
 package VentanasInicio;
 
+import java.awt.BorderLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
@@ -20,8 +21,10 @@ public class Teoria extends javax.swing.JFrame {
 
         Fondo = new javax.swing.JPanel();
         image1 = new javax.swing.JPanel();
-        cerrar = new javax.swing.JButton();
         titulo = new javax.swing.JLabel();
+        Desarrolladores = new javax.swing.JButton();
+        Principal = new javax.swing.JButton();
+        Scrum = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -31,51 +34,66 @@ public class Teoria extends javax.swing.JFrame {
         image1.setLayout(image1Layout);
         image1Layout.setHorizontalGroup(
             image1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 117, Short.MAX_VALUE)
+            .addGap(0, 195, Short.MAX_VALUE)
         );
         image1Layout.setVerticalGroup(
             image1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 120, Short.MAX_VALUE)
         );
 
-        cerrar.setText("Cerrar");
-        cerrar.addActionListener(new java.awt.event.ActionListener() {
+        titulo.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        titulo.setText("Ingeniería de Software");
+
+        Desarrolladores.setText("Desarrolladores");
+
+        Principal.setText("Principal");
+        Principal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cerrarActionPerformed(evt);
+                PrincipalActionPerformed(evt);
             }
         });
 
-        titulo.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        titulo.setText("Ingeniería de Software");
+        Scrum.setText("Scrum");
 
         javax.swing.GroupLayout FondoLayout = new javax.swing.GroupLayout(Fondo);
         Fondo.setLayout(FondoLayout);
         FondoLayout.setHorizontalGroup(
             FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FondoLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(cerrar)
-                .addGap(26, 26, 26))
+            .addGroup(FondoLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(Principal)
+                .addGap(128, 128, 128)
+                .addComponent(Scrum)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 150, Short.MAX_VALUE)
+                .addComponent(Desarrolladores)
+                .addGap(24, 24, 24))
             .addGroup(FondoLayout.createSequentialGroup()
                 .addGroup(FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(FondoLayout.createSequentialGroup()
-                        .addGap(24, 24, 24)
+                        .addGap(101, 101, 101)
                         .addComponent(image1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(FondoLayout.createSequentialGroup()
-                        .addGap(106, 106, 106)
+                        .addGap(177, 177, 177)
                         .addComponent(titulo)))
-                .addContainerGap(264, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         FondoLayout.setVerticalGroup(
             FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FondoLayout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addContainerGap()
                 .addComponent(titulo)
-                .addGap(18, 18, 18)
+                .addGroup(FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(FondoLayout.createSequentialGroup()
+                        .addGap(13, 13, 13)
+                        .addComponent(Principal, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FondoLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Scrum, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Desarrolladores, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(image1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 157, Short.MAX_VALUE)
-                .addComponent(cerrar)
-                .addGap(22, 22, 22))
+                .addContainerGap(198, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -94,15 +112,22 @@ public class Teoria extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cerrarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cerrarActionPerformed
+    private void PrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrincipalActionPerformed
+        Principal p = new Principal();
+        //this.setTitle("");
+        this.Fondo.removeAll();
+        this.Fondo.add(p.getFondo(), BorderLayout.CENTER);
+        this.Fondo.revalidate();
+        this.setPreferredSize(p.getPreferredSize());
+        this.Fondo.repaint();
+        //this.setTitle("YDGn");
+    }//GEN-LAST:event_PrincipalActionPerformed
 
     public static void main(String args[]) {
        Teoria teoria = new Teoria();
        teoria.setVisible(true);
-       teoria.setTitle("Teoría básica Ingeniería de Software");
-       teoria.setResizable(false);
+//       teoria.setTitle("Teoría básica Ingeniería de Software");
+       //teoria.setResizable(false);
     }
 
     public JPanel getFondo() {
@@ -114,8 +139,10 @@ public class Teoria extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Desarrolladores;
     private javax.swing.JPanel Fondo;
-    private javax.swing.JButton cerrar;
+    private javax.swing.JButton Principal;
+    private javax.swing.JButton Scrum;
     private javax.swing.JPanel image1;
     private javax.swing.JLabel titulo;
     // End of variables declaration//GEN-END:variables
