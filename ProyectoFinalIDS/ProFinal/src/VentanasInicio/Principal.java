@@ -1,18 +1,23 @@
 package VentanasInicio;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
+
 
 /**
  *
  * @author JoséLuis
  */
 public class Principal extends javax.swing.JFrame {
+    
+    
 
     public Principal() {
         initComponents();
         setIconImage(new ImageIcon(getClass().getResource("../Imagenes/LogoUNAM.png")).getImage());
+        
     }
 
 
@@ -130,6 +135,7 @@ public class Principal extends javax.swing.JFrame {
         this.Fondo.revalidate();
         this.setPreferredSize(teoria.getPreferredSize());
         this.Fondo.repaint();
+        
 //        this.setTitle("Teoría básica Ingeniería de Software");
     }//GEN-LAST:event_TeoriaActionPerformed
 
