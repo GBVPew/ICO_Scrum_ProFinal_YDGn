@@ -2,8 +2,10 @@ package VentanasInicio;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
+import javax.accessibility.AccessibleContext;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
+import javax.swing.JRootPane;
 
 
 /**
@@ -12,12 +14,10 @@ import javax.swing.JPanel;
  */
 public class Principal extends javax.swing.JFrame {
     
-    
-
     public Principal() {
         initComponents();
         setIconImage(new ImageIcon(getClass().getResource("../Imagenes/LogoUNAM.png")).getImage());
-        
+        setSize(560,400);        
     }
 
 
@@ -35,6 +35,7 @@ public class Principal extends javax.swing.JFrame {
         LogoFES = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setSize(680,400);
 
         Fondo.setBackground(new java.awt.Color(204, 204, 255));
         Fondo.setForeground(new java.awt.Color(0, 51, 51));
@@ -94,7 +95,7 @@ public class Principal extends javax.swing.JFrame {
         FondoLayout.setVerticalGroup(
             FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FondoLayout.createSequentialGroup()
-                .addGap(39, 39, 39)
+                .addContainerGap(42, Short.MAX_VALUE)
                 .addComponent(Bienvenida)
                 .addGap(18, 18, 18)
                 .addComponent(presen, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -110,19 +111,18 @@ public class Principal extends javax.swing.JFrame {
                         .addComponent(Equipo))
                     .addGroup(FondoLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(LogoFES)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(LogoFES))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Fondo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Fondo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Fondo, javax.swing.GroupLayout.PREFERRED_SIZE, 384, Short.MAX_VALUE)
+            .addComponent(Fondo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -130,15 +130,25 @@ public class Principal extends javax.swing.JFrame {
 
     private void TeoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TeoriaActionPerformed
         Teoria teoria = new Teoria();
-        this.Fondo.removeAll();
-        this.Fondo.add(teoria.getFondo(), BorderLayout.CENTER);
+        Principal p = new Principal();
+        p.setTitle("Teoria Basica Ingeniería de Software");
+        teoria.setTitle("Teoria Basica Ingeniería de Software");
+        Fondo.removeAll();
+        this.Fondo.add(teoria.getFondo());
         this.Fondo.revalidate();
-        this.setPreferredSize(teoria.getPreferredSize());
         this.Fondo.repaint();
         
-//        this.setTitle("Teoría básica Ingeniería de Software");
     }//GEN-LAST:event_TeoriaActionPerformed
 
+
+    public static void main(String args[]) {
+        Principal principal = new Principal();
+        principal.setVisible(true);
+        principal.setTitle("YDGn");
+        principal.setResizable(true);
+    }
+
+  
     public JPanel getFondo() {
         return Fondo;
     }
@@ -147,15 +157,7 @@ public class Principal extends javax.swing.JFrame {
         this.Fondo = Fondo;
     }
 
-
-    public static void main(String args[]) {
-        Principal principal = new Principal();
-        principal.setVisible(true);
-        principal.setTitle("YDGn");
-       // principal.setResizable(false);
-       
-    }
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Bienvenida;
     private javax.swing.JLabel Emenu;
