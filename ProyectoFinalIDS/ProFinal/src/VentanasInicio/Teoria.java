@@ -14,7 +14,9 @@ public class Teoria extends javax.swing.JFrame {
 
     public Teoria() {
         initComponents();
+        setTitle("Teoría básica Ingeniería de Software");
         setIconImage(new ImageIcon(getClass().getResource("../Imagenes/LogoUNAM.png")).getImage());
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -53,6 +55,11 @@ public class Teoria extends javax.swing.JFrame {
         });
 
         Scrum.setText("Scrum");
+        Scrum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ScrumActionPerformed(evt);
+            }
+        });
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Herramientas1.png"))); // NOI18N
 
@@ -166,10 +173,16 @@ public class Teoria extends javax.swing.JFrame {
         this.Fondo.repaint();   
     }//GEN-LAST:event_PrincipalActionPerformed
 
+    private void ScrumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ScrumActionPerformed
+        Scrum scrum = new Scrum();
+        Fondo.removeAll();
+        this.Fondo.add(scrum.getFondo());
+        this.Fondo.repaint();
+    }//GEN-LAST:event_ScrumActionPerformed
+
     public static void main(String args[]) {
         Teoria teoria = new Teoria();
         teoria.setVisible(true);
-        teoria.setTitle("Teoría básica Ingeniería de Software");
         teoria.setResizable(false);
     }
 

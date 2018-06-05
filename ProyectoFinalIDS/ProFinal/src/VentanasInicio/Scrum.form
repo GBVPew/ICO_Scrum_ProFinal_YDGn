@@ -143,6 +143,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Teor&#xed;a"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnTeoriaActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="BtnDesarrolladores">
           <Properties>

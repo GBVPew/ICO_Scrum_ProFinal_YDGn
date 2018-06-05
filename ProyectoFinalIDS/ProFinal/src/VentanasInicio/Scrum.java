@@ -1,4 +1,3 @@
-
 package VentanasInicio;
 
 import javax.swing.ImageIcon;
@@ -10,12 +9,12 @@ import javax.swing.JPanel;
  */
 public class Scrum extends javax.swing.JFrame {
 
-
     public Scrum() {
         initComponents();
+        setTitle("Teoría básica de Scrum");
         setIconImage(new ImageIcon(getClass().getResource("../Imagenes/LogoUNAM.png")).getImage());
+        
     }
-
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -50,6 +49,11 @@ public class Scrum extends javax.swing.JFrame {
         });
 
         BtnTeoria.setText("Teoría");
+        BtnTeoria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnTeoriaActionPerformed(evt);
+            }
+        });
 
         BtnDesarrolladores.setText("Desarrolladores");
 
@@ -198,8 +202,15 @@ public class Scrum extends javax.swing.JFrame {
         Principal p = new Principal();
         Fondo.removeAll();
         this.Fondo.add(p.getFondo());
-        this.Fondo.repaint();  
+        this.Fondo.repaint();
     }//GEN-LAST:event_BtnPrincipalActionPerformed
+
+    private void BtnTeoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTeoriaActionPerformed
+        Teoria teoria = new Teoria();
+        Fondo.removeAll();
+        this.Fondo.add(teoria.getFondo());
+        this.Fondo.repaint();
+    }//GEN-LAST:event_BtnTeoriaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -210,13 +221,14 @@ public class Scrum extends javax.swing.JFrame {
         scrum.setResizable(false);
     }
 
-    public JPanel getjPanel1() {
+    public JPanel getFondo() {
         return Fondo;
     }
 
-    public void setjPanel1(JPanel jPanel1) {
-        this.Fondo = jPanel1;
+    public void setFondo(JPanel Fondo) {
+        this.Fondo = Fondo;
     }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnDesarrolladores;

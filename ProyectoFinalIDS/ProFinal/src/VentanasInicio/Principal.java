@@ -16,6 +16,7 @@ public class Principal extends javax.swing.JFrame {
     
     public Principal() {
         initComponents();
+        setTitle("YDGn");
         setIconImage(new ImageIcon(getClass().getResource("../Imagenes/LogoUNAM.png")).getImage());     
     }
 
@@ -52,6 +53,11 @@ public class Principal extends javax.swing.JFrame {
 
         Scrum.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         Scrum.setText("SCRUM");
+        Scrum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ScrumActionPerformed(evt);
+            }
+        });
 
         Equipo.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         Equipo.setText("Desarrolladores");
@@ -132,11 +138,17 @@ public class Principal extends javax.swing.JFrame {
         this.Fondo.repaint();      
     }//GEN-LAST:event_TeoriaActionPerformed
 
+    private void ScrumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ScrumActionPerformed
+        Scrum scrum = new Scrum();
+        Fondo.removeAll();
+        this.Fondo.add(scrum.getFondo());
+        this.Fondo.repaint();
+    }//GEN-LAST:event_ScrumActionPerformed
+
 
     public static void main(String args[]) {
         Principal principal = new Principal();
         principal.setVisible(true);
-        principal.setTitle("YDGn");
         principal.setResizable(false);
     }
 
