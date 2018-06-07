@@ -42,11 +42,17 @@ public class Desarrolladores extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        Titulo.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        Fondo.setBackground(new java.awt.Color(255, 229, 244));
+
+        Titulo.setBackground(new java.awt.Color(153, 0, 51));
+        Titulo.setFont(new java.awt.Font("Monospaced", 2, 18)); // NOI18N
         Titulo.setText("Desarrolladores");
 
+        Vero.setBackground(new java.awt.Color(251, 229, 251));
         Vero.setColumns(20);
+        Vero.setForeground(new java.awt.Color(102, 0, 0));
         Vero.setRows(5);
+        Vero.setText("                    --> Verónica Lira Mendoza\nN°Cuenta: 312217125 \nCorreo Electronico: liramendozaveronica@gmail.com \nSemestre: Sexto \nRedes Sociales: *Facebook @Veronica Lira     **GitHub @Verónica Lira");
         jScrollPane1.setViewportView(Vero);
 
         BtnPrincipal.setText("Principal");
@@ -70,42 +76,43 @@ public class Desarrolladores extends javax.swing.JFrame {
             }
         });
 
+        Pewa.setBackground(new java.awt.Color(252, 233, 252));
         Pewa.setColumns(20);
+        Pewa.setForeground(new java.awt.Color(51, 0, 0));
         Pewa.setRows(5);
+        Pewa.setText("                    --> Vanesa Pewalty García Bazán\nN°Cuenta: 313173712 \nCorreo Electronico: pewalty@hotmail.com \nSemestre: Sexto \nRedes Sociales: *Facebook @Vanesa Garcia     **GitHub @GBVPew");
         jScrollPane2.setViewportView(Pewa);
 
+        Jose.setBackground(new java.awt.Color(253, 229, 253));
         Jose.setColumns(20);
+        Jose.setForeground(new java.awt.Color(102, 0, 0));
         Jose.setRows(5);
+        Jose.setText("                    --> José Luis Martínez Espíritu\nN°Cuenta: 313139389 \nCorreo Electronico: joseloespiritu_8v@hotmail.com \nSemestre: Sexto \nRedes Sociales: *Facebook @José Luis Mtnez Esp   **GitHu");
         jScrollPane3.setViewportView(Jose);
 
+        Oswaldo.setBackground(new java.awt.Color(251, 228, 251));
         Oswaldo.setColumns(20);
         Oswaldo.setRows(5);
+        Oswaldo.setText("                    --> Angel Oswaldo Ramírez Castillo\nN°Cuenta: 313341641\nCorreo Electronico: weskeryoka@gmail.com \nSemestre: Sexto \nRedes Sociales: *Facebook @Oswaldo Wesker   **GitHub @AORC");
         jScrollPane4.setViewportView(Oswaldo);
 
+        Kiana.setBackground(new java.awt.Color(252, 232, 252));
         Kiana.setColumns(20);
+        Kiana.setForeground(new java.awt.Color(102, 0, 0));
         Kiana.setRows(5);
+        Kiana.setText("                    --> Kiana Alejandra Chávez Ceballos\nN°Cuenta: 313217915\nCorreo Electronico: kianaalejandra23@hotmail.com \nSemestre: Sexto \nRedes Sociales: *Facebook @Anaki Sama      **GitHub @KianitaSama");
         jScrollPane5.setViewportView(Kiana);
 
+        Luis.setBackground(new java.awt.Color(253, 233, 253));
         Luis.setColumns(20);
         Luis.setRows(5);
+        Luis.setText("                    --> Luis Ángel García CervantesN°Cuenta: 313217915\nN°Cuenta:  313058044 \nCorreo Electronico: Luis_garciacervantes@yahoo.com.mx\nSemestre: Sexto \nRedes Sociales: *Facebook @Luis Garcia     **GitHub @LuisGC01");
         jScrollPane6.setViewportView(Luis);
 
         javax.swing.GroupLayout FondoLayout = new javax.swing.GroupLayout(Fondo);
         Fondo.setLayout(FondoLayout);
         FondoLayout.setHorizontalGroup(
             FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(FondoLayout.createSequentialGroup()
-                .addGap(330, 330, 330)
-                .addComponent(Titulo)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(FondoLayout.createSequentialGroup()
-                .addGap(59, 59, 59)
-                .addComponent(BtnPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(125, 125, 125)
-                .addComponent(BtnTeoria, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
-                .addComponent(BtnScrum, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(113, 113, 113))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FondoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -116,17 +123,30 @@ public class Desarrolladores extends javax.swing.JFrame {
                     .addComponent(jScrollPane5)
                     .addComponent(jScrollPane6))
                 .addGap(25, 25, 25))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FondoLayout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addComponent(BtnPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(134, 134, 134)
+                .addGroup(FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(FondoLayout.createSequentialGroup()
+                        .addComponent(Titulo)
+                        .addContainerGap(369, Short.MAX_VALUE))
+                    .addGroup(FondoLayout.createSequentialGroup()
+                        .addComponent(BtnTeoria, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(BtnScrum, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(83, 83, 83))))
         );
         FondoLayout.setVerticalGroup(
             FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FondoLayout.createSequentialGroup()
-                .addGap(4, 4, 4)
+                .addGap(8, 8, 8)
                 .addComponent(Titulo)
-                .addGap(9, 9, 9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BtnPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BtnTeoria, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnScrum, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(BtnScrum, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BtnPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -139,7 +159,7 @@ public class Desarrolladores extends javax.swing.JFrame {
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -150,7 +170,7 @@ public class Desarrolladores extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Fondo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Fondo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();

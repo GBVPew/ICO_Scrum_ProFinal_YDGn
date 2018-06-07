@@ -35,30 +35,21 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="Fondo" min="-2" max="-2" attributes="0"/>
+          <Component id="Fondo" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
     <Container class="javax.swing.JPanel" name="Fondo">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f4" green="e5" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace min="-2" pref="330" max="-2" attributes="0"/>
-                  <Component id="Titulo" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                  <Component id="BtnPrincipal" min="-2" pref="135" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
-                  <Component id="BtnTeoria" min="-2" pref="168" max="-2" attributes="0"/>
-                  <EmptySpace pref="81" max="32767" attributes="0"/>
-                  <Component id="BtnScrum" min="-2" pref="154" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
-              </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -71,18 +62,35 @@
                   </Group>
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                  <Component id="BtnPrincipal" min="-2" pref="135" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="Titulo" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="369" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="BtnTeoria" min="-2" pref="168" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="BtnScrum" min="-2" pref="154" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                   <Component id="Titulo" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="BtnPrincipal" alignment="3" min="-2" pref="15" max="-2" attributes="0"/>
                       <Component id="BtnTeoria" alignment="3" min="-2" pref="15" max="-2" attributes="0"/>
                       <Component id="BtnScrum" alignment="3" min="-2" pref="15" max="-2" attributes="0"/>
+                      <Component id="BtnPrincipal" alignment="3" min="-2" pref="15" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
@@ -96,7 +104,7 @@
                   <Component id="jScrollPane5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jScrollPane6" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="26" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -104,8 +112,11 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="Titulo">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="0" red="99" type="rgb"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="18" style="1"/>
+              <Font name="Monospaced" size="18" style="2"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Desarrolladores"/>
           </Properties>
@@ -119,8 +130,15 @@
           <SubComponents>
             <Component class="javax.swing.JTextArea" name="Vero">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="fb" green="e5" red="fb" type="rgb"/>
+                </Property>
                 <Property name="columns" type="int" value="20"/>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="66" type="rgb"/>
+                </Property>
                 <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="                    --&gt; Ver&#xf3;nica Lira Mendoza&#xa;N&#xb0;Cuenta: 312217125 &#xa;Correo Electronico: liramendozaveronica@gmail.com &#xa;Semestre: Sexto &#xa;Redes Sociales: *Facebook @Veronica Lira     **GitHub @Ver&#xf3;nica Lira"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -158,8 +176,15 @@
           <SubComponents>
             <Component class="javax.swing.JTextArea" name="Pewa">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="fc" green="e9" red="fc" type="rgb"/>
+                </Property>
                 <Property name="columns" type="int" value="20"/>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="33" type="rgb"/>
+                </Property>
                 <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="                    --&gt; Vanesa Pewalty Garc&#xed;a Baz&#xe1;n&#xa;N&#xb0;Cuenta: 313173712 &#xa;Correo Electronico: pewalty@hotmail.com &#xa;Semestre: Sexto &#xa;Redes Sociales: *Facebook @Vanesa Garcia     **GitHub @GBVPew"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -173,8 +198,15 @@
           <SubComponents>
             <Component class="javax.swing.JTextArea" name="Jose">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="fd" green="e5" red="fd" type="rgb"/>
+                </Property>
                 <Property name="columns" type="int" value="20"/>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="66" type="rgb"/>
+                </Property>
                 <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="                    --&gt; Jos&#xe9; Luis Mart&#xed;nez Esp&#xed;ritu&#xa;N&#xb0;Cuenta: 313139389 &#xa;Correo Electronico: joseloespiritu_8v@hotmail.com &#xa;Semestre: Sexto &#xa;Redes Sociales: *Facebook @Jos&#xe9; Luis Mtnez Esp   **GitHu"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -188,8 +220,12 @@
           <SubComponents>
             <Component class="javax.swing.JTextArea" name="Oswaldo">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="fb" green="e4" red="fb" type="rgb"/>
+                </Property>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="                    --&gt; Angel Oswaldo Ram&#xed;rez Castillo&#xa;N&#xb0;Cuenta: 313341641&#xa;Correo Electronico: weskeryoka@gmail.com &#xa;Semestre: Sexto &#xa;Redes Sociales: *Facebook @Oswaldo Wesker   **GitHub @AORC"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -203,8 +239,15 @@
           <SubComponents>
             <Component class="javax.swing.JTextArea" name="Kiana">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="fc" green="e8" red="fc" type="rgb"/>
+                </Property>
                 <Property name="columns" type="int" value="20"/>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="66" type="rgb"/>
+                </Property>
                 <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="                    --&gt; Kiana Alejandra Ch&#xe1;vez Ceballos&#xa;N&#xb0;Cuenta: 313217915&#xa;Correo Electronico: kianaalejandra23@hotmail.com &#xa;Semestre: Sexto &#xa;Redes Sociales: *Facebook @Anaki Sama      **GitHub @KianitaSama"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -218,8 +261,12 @@
           <SubComponents>
             <Component class="javax.swing.JTextArea" name="Luis">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="fd" green="e9" red="fd" type="rgb"/>
+                </Property>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="                    --&gt; Luis &#xc1;ngel Garc&#xed;a CervantesN&#xb0;Cuenta: 313217915&#xa;N&#xb0;Cuenta:  313058044 &#xa;Correo Electronico: Luis_garciacervantes@yahoo.com.mx&#xa;Semestre: Sexto &#xa;Redes Sociales: *Facebook @Luis Garcia     **GitHub @LuisGC01"/>
               </Properties>
             </Component>
           </SubComponents>
