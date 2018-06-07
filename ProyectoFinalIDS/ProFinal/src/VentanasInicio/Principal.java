@@ -61,6 +61,11 @@ public class Principal extends javax.swing.JFrame {
 
         Equipo.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         Equipo.setText("Desarrolladores");
+        Equipo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EquipoActionPerformed(evt);
+            }
+        });
 
         presen.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         presen.setText("<html> Dentro de este proyecto encontraras información sobre teoría básica de la Ingeniería de Software, Scrum y sobre los Desarrolladores. </html>");
@@ -144,6 +149,13 @@ public class Principal extends javax.swing.JFrame {
         this.Fondo.add(scrum.getFondo());
         this.Fondo.repaint();
     }//GEN-LAST:event_ScrumActionPerformed
+
+    private void EquipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EquipoActionPerformed
+        Desarrolladores d = new Desarrolladores();
+        Fondo.removeAll();
+        this.Fondo.add(d.getFondo());
+        this.Fondo.repaint();
+    }//GEN-LAST:event_EquipoActionPerformed
 
 
     public static void main(String args[]) {

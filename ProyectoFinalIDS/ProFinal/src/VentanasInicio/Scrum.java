@@ -57,6 +57,11 @@ public class Scrum extends javax.swing.JFrame {
         });
 
         BtnDesarrolladores.setText("Desarrolladores");
+        BtnDesarrolladores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnDesarrolladoresActionPerformed(evt);
+            }
+        });
 
         Titulo.setFont(new java.awt.Font("Palatino Linotype", 2, 18)); // NOI18N
         Titulo.setForeground(new java.awt.Color(255, 51, 51));
@@ -126,14 +131,11 @@ public class Scrum extends javax.swing.JFrame {
                 .addGroup(FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(FondoLayout.createSequentialGroup()
-                        .addGroup(FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(FondoLayout.createSequentialGroup()
-                                .addGap(136, 136, 136)
-                                .addComponent(jLabel3))
-                            .addGroup(FondoLayout.createSequentialGroup()
-                                .addGap(19, 19, 19)
-                                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 411, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(136, 136, 136)
+                        .addComponent(jLabel3))
+                    .addGroup(FondoLayout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 411, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FondoLayout.createSequentialGroup()
                         .addGap(2, 2, 2)
@@ -230,6 +232,13 @@ public class Scrum extends javax.swing.JFrame {
         this.Fondo.add(teoria.getFondo());
         this.Fondo.repaint();
     }//GEN-LAST:event_BtnTeoriaActionPerformed
+
+    private void BtnDesarrolladoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnDesarrolladoresActionPerformed
+        Desarrolladores d = new Desarrolladores();
+        Fondo.removeAll();
+        this.Fondo.add(d.getFondo());
+        this.Fondo.repaint();
+    }//GEN-LAST:event_BtnDesarrolladoresActionPerformed
 
     /**
      * @param args the command line arguments

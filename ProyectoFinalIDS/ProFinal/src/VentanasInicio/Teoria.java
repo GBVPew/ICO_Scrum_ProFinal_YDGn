@@ -46,6 +46,11 @@ public class Teoria extends javax.swing.JFrame {
         titulo.setText("Ingeniería de Software");
 
         Desarrolladores.setText("Desarrolladores");
+        Desarrolladores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DesarrolladoresActionPerformed(evt);
+            }
+        });
 
         Principal.setText("Principal");
         Principal.addActionListener(new java.awt.event.ActionListener() {
@@ -179,6 +184,13 @@ public class Teoria extends javax.swing.JFrame {
         this.Fondo.add(scrum.getFondo());
         this.Fondo.repaint();
     }//GEN-LAST:event_ScrumActionPerformed
+
+    private void DesarrolladoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DesarrolladoresActionPerformed
+        Desarrolladores d = new Desarrolladores();
+        Fondo.removeAll();
+        this.Fondo.add(d.getFondo());
+        this.Fondo.repaint();
+    }//GEN-LAST:event_DesarrolladoresActionPerformed
 
     public static void main(String args[]) {
         Teoria teoria = new Teoria();

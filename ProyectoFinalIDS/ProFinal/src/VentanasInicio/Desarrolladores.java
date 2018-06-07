@@ -57,8 +57,18 @@ public class Desarrolladores extends javax.swing.JFrame {
         });
 
         BtnTeoria.setText("Teoría");
+        BtnTeoria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnTeoriaActionPerformed(evt);
+            }
+        });
 
         BtnScrum.setText("Scrum");
+        BtnScrum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnScrumActionPerformed(evt);
+            }
+        });
 
         Pewa.setColumns(20);
         Pewa.setRows(5);
@@ -152,6 +162,20 @@ public class Desarrolladores extends javax.swing.JFrame {
         this.Fondo.add(p.getFondo());
         this.Fondo.repaint();
     }//GEN-LAST:event_BtnPrincipalActionPerformed
+
+    private void BtnTeoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTeoriaActionPerformed
+        Teoria teoria = new Teoria();
+        Fondo.removeAll();
+        this.Fondo.add(teoria.getFondo());
+        this.Fondo.repaint();
+    }//GEN-LAST:event_BtnTeoriaActionPerformed
+
+    private void BtnScrumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnScrumActionPerformed
+        Scrum scrum = new Scrum();
+        Fondo.removeAll();
+        this.Fondo.add(scrum.getFondo());
+        this.Fondo.repaint();
+    }//GEN-LAST:event_BtnScrumActionPerformed
 
     public static void main(String args[]) {
         Desarrolladores desarrolladores = new Desarrolladores();

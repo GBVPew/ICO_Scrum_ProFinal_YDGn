@@ -137,11 +137,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Teor&#xed;a"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnTeoriaActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="BtnScrum">
           <Properties>
             <Property name="text" type="java.lang.String" value="Scrum"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnScrumActionPerformed"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane2">
           <AuxValues>
